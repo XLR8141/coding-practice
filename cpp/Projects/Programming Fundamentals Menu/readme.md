@@ -4,15 +4,29 @@ A console program with a login screen and a menu of small exercises, grouped by 
 
 ## What's inside
 
-The menu has five main functions. Each one holds several small exercises.
+# About the Project
 
-| Function | Topic | Example exercises |
-|---|---|---|
-| Loop-based | `for` / `while` loops | Print sequences, calculate sums, draw patterns |
-| If-else | Conditionals | Decisions based on user input |
-| Switch | `switch-case` | Multi-choice problems |
-| Array | Arrays | Sum, average, maximum of user-entered values |
-| Combined | Loops + conditionals + arrays | Multi-step problems that mix the above |
+This project features a menu-driven interface with login functionality and multiple exercises across different programming categories.
+
+The main goal of the project was to learn and apply fundamental C++ concepts such as functions, loops, conditionals, arrays, and switch statements in a structured and practical way.
+
+I was tasked with creating five main functions, each focused on a different programming concept. Each function contained multiple smaller exercises:
+
+1. **Loop-Based Function**
+   - Tasks such as printing sequences, calculating sums, and generating patterns.
+
+2. **If-Else Function**
+   - Exercises requiring decision-making based on user input.
+
+3. **Switch Function**
+   - Problems that used switch-case statements to handle multiple choices.
+
+4. **Array Function**
+   - Tasks involving arrays, such as finding the sum, average, or maximum value.
+
+5. **Combined Function Task**
+   - Exercises that combined loops, conditionals, and arrays to solve more complex problems.
+
 
 ## Features
 
