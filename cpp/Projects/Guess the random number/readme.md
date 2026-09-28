@@ -1,20 +1,24 @@
-## About the Project
-This C++ program is an **interactive “Guess The Random Number” game** .  
-The game uses **random number generation**, user input, conditional statements, loops, and functions to create a fully functional, menu-driven program.  
+# Guess the Random Number
 
-## Key Features
-- **Random Number Generation:** Generates a secret number between 1 and 100 using `rand()` and `srand(time(0))`.  
-- **Difficulty Levels:** Offers three difficulty modes (Easy, Medium, Hard) with a different number of attempts.  
-- **Menu-Driven Interface:** Users can select difficulty levels, try again after winning or losing, or exit the game.  
-- **Feedback System:** Gives hints if the guessed number is higher or lower than the secret number.  
-- **Replayability:** Allows the player to restart the game multiple times without restarting the program.  
+A menu-driven console game in C++. The program picks a secret number between 1 and 100, and you try to guess it within a limited number of attempts.
 
-## My Experience
-This was one of my first C++ projects as a beginner. Writing this game was both **interesting and fun**, and it helped me learn and practice:  
-- Using **functions** to modularize code and separate game logic from the main program.  
-- Implementing **loops** and **conditional statements** effectively.  
-- Making the code **visually appealing** and easy to read.  
-- Managing **user input** and providing clear, interactive feedback.  
-- Debugging logic errors and structuring a program to be both **user-friendly and functional**.  
+## Features
+- **Three difficulty levels:** Easy (X attempts), Medium (Y), Hard (Z)
+- **Hints:** after every guess, the game says whether you were too high or too low
+- **Replay without restarting:** after a win or loss, play again, change difficulty, or exit
+- **Different number every run:** generated with `rand()`, seeded with `srand(time(0))`
 
-Completing this project gave me a **lot of confidence** in applying basic programming concepts, and it was a rewarding experience to see the game working as intended with multiple features and replayability.
+## Concepts practiced
+- Loops and conditionals for game flow, attempt counting, and win/loss checks
+- Reading user input and giving feedback
+- Menu-driven program design
+
+## What I learned
+- Why `srand(time(0))` is needed: without it, `rand()` gives the same "random" number every run
+- Splitting game logic into functions instead of keeping it all in `main()`
+- (Add one real bug you fixed, e.g. an off-by-one in the attempts counter)
+
+## Possible improvements
+- Validate non-numeric input (typing a letter shouldn't break the loop)
+- Track best score or win/loss stats across rounds
+- Replace `rand()` with `<random>` (`std::mt19937`), the modern C++ approach
